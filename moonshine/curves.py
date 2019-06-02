@@ -1,6 +1,6 @@
 
 
-def discount_factor(rate: float, tenor: float):
+def discount_factor(rate: float, tenor: float) -> float:
     return (1 + rate) ** -tenor
 
 

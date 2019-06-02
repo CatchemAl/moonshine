@@ -1,6 +1,6 @@
 from .curves import discount_factor
 
-def price_cashflow(nominal: float, rate: float, tenor: float):
+def price_cashflow(nominal: float, rate: float, tenor: float) -> float:
     return nominal * discount_factor(rate, tenor)
 
 
