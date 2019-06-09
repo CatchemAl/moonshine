@@ -1,4 +1,14 @@
-# tests can be run using py.test
+# To run tests against the code base, either run the test runner directly
+# or, when in the root folder, run: python -m pytest
+#
+# To run the tests against the installed package, install the package with
+#
+#   pip install .                       for one off installations
+#
+#   pip install --editable .            for symbolic links development mode
+#
+# and then run py.test
+
 from moonshine.curves import discount_factor
 from moonshine.instruments import price_cashflow
 

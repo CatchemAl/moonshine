@@ -4,10 +4,6 @@ def discount_factor(rate: float, tenor: float) -> float:
     return (1 + rate) ** -tenor
 
 
-def joke():
-    return 'Knock knock'
-
-
 if __name__ == '__main__':
     df = discount_factor(0.02, 10)
     print(df)

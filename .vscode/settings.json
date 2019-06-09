@@ -5,5 +5,5 @@
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pyTestEnabled": true,
-    "python.pythonPath": "C:\\Users\\alexj\\AppData\\Local\\Continuum\\anaconda3\\envs\\moonshine37\\python.exe"
+    "python.pythonPath": "C:\\Users\\alexj\\AppData\\Local\\Continuum\\anaconda3\\envs\\py37\\python.exe"
 }
