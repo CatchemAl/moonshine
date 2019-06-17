@@ -22,7 +22,6 @@ setup(
     packages=find_packages('src'),
     package_dir={'': 'src'},
     install_requires=REQUIRED,  # external packages as dependencies
-    scripts=['src/moonshine/scripts/getprice2'],
     entry_points = {
 		'console_scripts': [ 
 			'getpr = moonshine.__main__:main',

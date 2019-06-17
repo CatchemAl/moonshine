@@ -2,6 +2,12 @@
 
 Moonshine is an example repository that shows you how to set up a Python project. This notebook documents the basics of setting up Python, managing virtual environments, and structuring a project.
 
+# Table of Contents
+1. [Installation](#Installation)
+2. [Setting up a virtual environment](#Setting-up-a-virtual-environment)
+3. [Setting up VS Code](#Setting-up-VS-Code)
+
+
 ## Installation
 
 1. Download [Anaconda](https://www.anaconda.com/distribution/).
@@ -55,7 +61,7 @@ It is a good idea to set up a virtual environment for each project. To do this i
 Next, activate the newly created environment with
 `conda activate tempenv` and install NodeJS with `conda install -c conda-forge nodejs`.
 
-Finally, install the pip requirements and the JupyterLab widgets.
+Finally, install the pip requirements and the JupyterLab widgets as before.
 
 ## Setting up VS Code
 
@@ -88,4 +94,36 @@ By creating a test module, e.g. test_foo.py with a method test_bar, VS Code shou
 }
 ```
 
-Finally, you will want to create a launch.json file to save your launch settings.
+Finally, you will want to create a launch.json file to save your launch settings. To do this, `Ctrl+Shift+D` to open the Debug panel, click the dropdown box and Add Configuration... It is a good idea to have a number of configurations such as current file and main entry point:
+
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Current File (Console)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "externalTerminal"
+        },
+        {
+            "name": "Python: Main",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/main.py",
+            "console": "integratedTerminal"
+        }
+    ]
+}
+```
