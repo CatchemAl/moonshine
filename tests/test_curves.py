@@ -1,3 +1,6 @@
+from moonshine.curves import discount_factor
+from moonshine.instruments import price_cashflow
+
 # To run tests against the code base, either run the test runner directly
 # or, when in the root folder, run: python -m pytest
 #
@@ -18,9 +21,6 @@
 #
 #       remove from site-packages\easy_install.pth
 #       delete moonshine.egg-link file
-
-from moonshine.curves import discount_factor
-from moonshine.instruments import price_cashflow
 
 
 def test_discount_factor():

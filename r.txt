@@ -1,0 +1,1 @@
+-e git+https://github.com/CatchemAl/moonshine.git@d0fd3885b5da6b50145a57d34eb2be7b60ceb567#egg=moonshine

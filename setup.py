@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # Package meta-data.
 NAME = 'moonshine'
@@ -19,6 +19,13 @@ setup(
     description=DESCRIPTION,
     author=AUTHOR,
     author_email=EMAIL,
-    packages=[NAME],  # same as name
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
     install_requires=REQUIRED,  # external packages as dependencies
+    scripts=['src/moonshine/scripts/getprice2'],
+    entry_points = {
+		'console_scripts': [ 
+			'getpr = moonshine.__main__:main',
+		],
+	},
 )
