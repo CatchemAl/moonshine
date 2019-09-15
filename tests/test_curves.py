@@ -28,9 +28,6 @@ def test_discount_factor() -> None:
     discount_factor = get_discount_factor(0.00, 10)
     expected = 1
 
-
-
-
     assert discount_factor == expected
 
 
