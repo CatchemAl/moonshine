@@ -1,4 +1,4 @@
-from moonshine.curves import discount_factor
+from moonshine.curves import get_discount_factor
 from moonshine.instruments import price_cashflow
 
 # To run tests against the code base, either run the test runner directly
@@ -23,17 +23,20 @@ from moonshine.instruments import price_cashflow
 #       delete moonshine.egg-link file
 
 
-def test_discount_factor():
-    '''A simple test.'''
-    df = discount_factor(0.00, 10)
+def test_discount_factor() -> None:
+    """A simple test."""
+    discount_factor = get_discount_factor(0.00, 10)
     expected = 1
 
-    assert df == expected
 
 
-def test_price_cashflow():
-    '''A simple test.'''
-    df = price_cashflow(100, 0.00, 10)
+
+    assert discount_factor == expected
+
+
+def test_price_cashflow() -> None:
+    """A simple test."""
+    price = price_cashflow(100, 0.00, 10)
     expected = 100
 
-    assert df == expected
+    assert price == expected
