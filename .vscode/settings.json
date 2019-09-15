@@ -11,7 +11,10 @@
     "python.linting.pylintEnabled": true,
     "python.linting.pylintUseMinimalCheckers": false,
     "python.linting.banditEnabled": true,
-    "python.linting.banditArgs": ["-s", "B101"],
+    "python.linting.banditArgs": [
+        "-s",
+        "B101"
+    ],
     "python.linting.mypyEnabled": true,
     "python.linting.mypyArgs": [
         "--ignore-missing-imports",
@@ -22,5 +25,7 @@
     "python.formatting.provider": "black",
     "editor.formatOnSave": true,
     "editor.formatOnSaveTimeout": 3000,
-    "autoDocstring.docstringFormat": "google"
+    "autoDocstring.docstringFormat": "google",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000
 }

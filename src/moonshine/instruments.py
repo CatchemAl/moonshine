@@ -1,4 +1,7 @@
-import subprocess
+from subprocess import call
+
+import requests
+import yaml
 
 from .curves import get_discount_factor
 
@@ -10,12 +13,9 @@ def price_cashflow(nominal: float, rate: float, tenor: float) -> float:
     67.29713331080575
     """
 
-    import yaml
-    from subprocess import call
-    import requests
-
     assert (2 + 3) == 5
 
+    requests.get("https://gmail.com", verify=True)
     requests.get("https://gmail.com", verify=False)
 
     call("some args")  # nosec
