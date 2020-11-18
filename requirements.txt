@@ -51,7 +51,7 @@ multidict==4.5.2
 nbconvert==5.5.0
 nbformat==4.4.0
 nodejs==0.1.1
-notebook==5.7.8
+notebook==6.1.5
 numba==0.44.0
 numpy==1.16.4
 optional-django==0.1.0
